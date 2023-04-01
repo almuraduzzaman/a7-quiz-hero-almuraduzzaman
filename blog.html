@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quiz Hero Blogs</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <!-- daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        const toggleToHome = () => window.location.href = "index.html";
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+
+
+</head>
+
+<body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <button onclick="toggleToHome()" class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+                Home
+            </button>
+        </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+
+
+    <main>
+        <section>
+            <!-- question 1 -->
+            <div class="hero my-6 md:w-[80%] mx-auto rounded-lg bg-base-200">
+                <div class="hero-content flex-col lg:flex-row">
+                    <img src="images/arraymethod.png" class="md:max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-3xl font-bold">What is the difference between map, filter, forEach and find
+                            method?</h1>
+                        <p class="py-6">
+                        <ul>
+                            <li><span class="font-bold">map(): </span>map creates a new array based on the result of
+                                applying a function to each element.</li>
+                            <li class="mt-2"><span class="font-bold">filter(): </span>filter returns a new array with
+                                elements that
+                                pass a test.</li>
+                            <li class="mt-2"><span class="font-bold">forEach(): </span>forEach performs a function on
+                                each element.
+                            </li>
+                            <li class="mt-2"><span class="font-bold">find(): </span>find returns the first element in an
+                                array that
+                                passes a test.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- question 2 -->
+            <div class="hero my-6 md:w-[80%] mx-auto rounded-lg bg-base-200">
+                <div class="hero-content flex-col lg:flex-row">
+                    <img src="images/storage.jpg" class="md:max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-3xl font-bold">Difference among local storage, session storage and cookies?</h1>
+                        <p class="py-6">
+                        <ul>
+                            <li><span class="font-bold">Cookies: </span>Cookies are small text files that are stored on
+                                the client-side by a web browser. They are designed to store small amounts of data for a
+                                long period of time and can be accessed by both the client and server. They are commonly
+                                used to store user-specific information and can be accessed across multiple sessions.
+                            </li>
+                            <li class="mt-2"><span class="font-bold">Local Storage: </span>Local storage is a mechanism
+                                that allows web applications to store larger amounts of data on the client-side. Data
+                                stored in local storage remains even after the browser is closed and can only be
+                                accessed by the client. It can be used to store data such as user preferences, cached
+                                data, or application state.</li>
+                            <li class="mt-2"><span class="font-bold">Session Storage: </span>Session storage is similar
+                                to local storage, but the data stored in session storage is cleared when the session
+                                ends. A session ends when the user closes the browser or after a certain period of
+                                inactivity. Session storage can be used to store data that should only be available for
+                                a single session, such as shopping cart data or temporary user inputs.
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- question 3 -->
+            <div class="hero my-6 md:w-[80%] mx-auto rounded-lg bg-base-200">
+                <div class="hero-content flex-col lg:flex-row">
+                    <img src="images/eventloop.jpg" class=" md:max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-3xl font-bold">What is event loop and how does it works?</h1>
+                        <p class="py-6">The event loop is a mechanism in JavaScript that allows the browser to handle
+                            multiple tasks simultaneously without blocking the main thread. It works by continuously
+                            checking for new tasks to execute and processing them in a non-blocking way. The tasks are
+                            stored in a queue, and when a new task is added, it is moved to the call stack for
+                            execution. The call stack is a stack of function calls, and when a function is executed, it
+                            is added to the top of the stack. The event loop continues executing functions on the call
+                            stack until it is empty, and then moves the next task from the queue to the stack, and the
+                            process repeats.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- question 4 -->
+            <div class="hero my-6 md:w-[80%] mx-auto rounded-lg bg-base-200">
+                <div class="hero-content flex-col lg:flex-row">
+                    <img src="images/quiztimer.jpg" class=" md:max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-3xl font-bold">How quizTimer() function is working in this project?</h1>
+                        <p class="py-6">quizTimer() function basically counts and shows time in the UI. This function
+                            takes a parameter called 'dismiss'. When the parameter is given as an argument then it goes
+                            into the if condition after then it's clear the interval and returns from the function.
+
+                            When the parameter is false, it counts time in seconds by the setInterval() function. In
+                            this function, there is a variable called 'min' it checks the length of the 'contMin'
+                            variable, if the length is 1 then it adds '0' before it else it prints two digits. Also, if
+                            the count is more than the 60s then the count variable turns red.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- question 5 -->
+            <div class="hero my-6 md:w-[80%] mx-auto rounded-lg bg-base-200">
+                <div class="hero-content flex-col lg:flex-row">
+                    <img src="images/choosequiz.jpg" class=" md:max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-3xl font-bold">How chooseQuiz() function is working in this project?</h1>
+                        <p class="py-6">chooseQuiz(), function takes inputs from the user and after processing those
+                            results it appears on the UI. It takes two parameters, one is for the index and another is
+                            for the answer which is given by the user. It checks between the answer id and the original
+                            quiz id. After all the condition is fulfilled then it displays answers in the user
+                            interface.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+        Copyright © 2023 Murad All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+
+</body>
+
+</html>
